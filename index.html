@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/185b71e1ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+    <title>My Booklist App</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open text-muted"></i>My<span class="text-muted">Book</span>List</h1>
+            <form id="book-form">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title"
+                    class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author"
+                    class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="isbn">ISBN#</label>
+                    <input type="text" id="isbn"
+                    class="form-control">
+                </div>
+                <input type="submit" value="Add Book"
+                class="btn btn-outline-primary btn-block">
+            </form>
+            <table class="table table-hover mt-4">
+                <thead>
+                    <tr class="table-primary text-dark">
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN#</th>
+                        <th>Delete</th>
+                      </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
